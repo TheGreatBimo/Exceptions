@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Ex_02.Marketplace
 {
-	class Market : ICollection<Shop>
+	public class Market : ICollection<Shop>
 	{
 		public List<Shop> Shops { get; set; }
 		public string Name { get; set; }
