@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ex_02.Marketplace
 {
-	class Product
+	public class Product
 	{
 		public string Name { get; }
 		public List<Price> PriceList { get; }

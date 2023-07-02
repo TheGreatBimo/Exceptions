@@ -2,7 +2,7 @@
 
 namespace Ex_02.Marketplace
 {
-	class Price
+	public class Price
 	{
 		public double Value { get; set; }
 		public Shop Shop { get; }

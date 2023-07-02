@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ex_02.Marketplace
 {
-	class ShopNameAlreadyTakenException : Exception
+	public class ShopNameAlreadyTakenException : Exception
 	{
 		public ShopNameAlreadyTakenException(string shopName, string marketName) : base($"Shop with name {shopName} already exists in market {marketName}")	{ }
 	}
