@@ -26,12 +26,12 @@ namespace Ex_02.Marketplace
 		}
 		public void AddProduct(Product product, int price)
 		{
-
+			new Price(product, this, price);
 		}
 
 		public void UpdateProduct(Product product, int newPrice)
 		{
-
+			Pricelist[product].Value = newPrice;
 		}
 
 		public void ShowAllProducts()
