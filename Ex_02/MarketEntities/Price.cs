@@ -18,11 +18,21 @@ namespace Ex_02.Marketplace
 
 			if (value <= 0)
 				throw new ArgumentOutOfRangeException(nameof(value));
-			
 
 			Product = product;
 			Shop = shop;
 			Value = value;
+
+			if (!shop.Products.Contains(product))
+			{
+				shop.Add(product);
+				shop.Pricelist.Add(product, this);
+				product.PriceList.Add(this);
+			}
+			else
+			{
+				throw new ProductAlreadyExistsException(this);
+			}
 		}
 	}
 }
