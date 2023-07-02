@@ -16,10 +16,5 @@ namespace Ex_02.Marketplace
 			this.Name = name;
 			PriceList = new List<Price>();
 		}
-
-		public void AddPrice(Price price)
-		{
-			PriceList.Add(price);
-		}
 	}
 }
