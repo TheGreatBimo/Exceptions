@@ -16,5 +16,14 @@ namespace Ex_02.Marketplace
 			this.Name = name;
 			PriceList = new List<Price>();
 		}
+
+		public void ShowAllPrices()
+		{
+			Console.WriteLine($"Prices info for {Name}");
+			foreach (var price in PriceList)
+			{
+				Console.WriteLine($"Price in shop {price.Shop.Name}: {price.Value}");
+			}
+		}
 	}
 }
