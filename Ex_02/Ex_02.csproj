@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MarketEntities\Exceptions\ProductAlreadyExistsException.cs" />
+    <Compile Include="MarketEntities\Exceptions\ShopIsInAnotherMarketException.cs" />
     <Compile Include="MarketEntities\Exceptions\ShopNameAlreadyTakenException.cs" />
     <Compile Include="MarketEntities\Exceptions\ShopNotFoundException.cs" />
     <Compile Include="MarketEntities\Marketplace.cs" />
