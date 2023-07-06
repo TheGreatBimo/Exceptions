@@ -44,6 +44,8 @@ namespace Ex_02
 			string shopname = Console.ReadLine();
 			market[shopname].ShowAllProducts();
 
+			product_HPPrinter.ShowAllPrices();
+
 			Console.ReadKey();
 
 		}
